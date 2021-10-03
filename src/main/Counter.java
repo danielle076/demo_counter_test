@@ -47,4 +47,8 @@ public class Counter {
     public static int getMaxWithStream(int[] numbers) {
         return Arrays.stream(numbers).max().orElse(0);
     }
+
+    public int getMaximum(int[] numbers) {
+        return getMaxWithStream(numbers);
+    }
 }

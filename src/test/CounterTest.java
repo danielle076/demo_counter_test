@@ -90,4 +90,19 @@ public class CounterTest {
         int expected = 0;
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void CounterTestMaximum() {
+        // arrange
+        Counter counter = new Counter();
+        int[] numbers = new int[] {1,2,3};
+
+        // act
+        counter.add(numbers);
+        int actual = counter.getMaximum(numbers);
+
+        // assert
+        int expected = 3;
+        assertEquals(expected, actual);
+    }
 }
